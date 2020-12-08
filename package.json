@@ -1,0 +1,27 @@
+{
+  "name": "updated-portfolio-2.0",
+  "version": "1.0.0",
+  "description": "Updated portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js -e js,hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baxtercox/Updated-portfolio-2.0.git"
+  },
+  "author": "Baxter Cox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baxtercox/Updated-portfolio-2.0/issues"
+  },
+  "homepage": "https://github.com/baxtercox/Updated-portfolio-2.0#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}
