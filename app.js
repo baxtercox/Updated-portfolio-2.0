@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000;
+const port = Process.env.PORT || 3000;
 
 app.set("view engine", "hbs");
 
@@ -23,6 +23,9 @@ app.get("/work", (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${3000}`);
+server.listen(port, () => {
+  // do not add localhost here if you are deploying it
+  app.listen(process.env.PORT || port, () =>
+    console.log(`example app listening at http://;pcalhost:${port}`)
+  );
 });
